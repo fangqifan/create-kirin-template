@@ -1,6 +1,10 @@
-import fs from 'fs'
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
+// import fs from 'fs'
+// import { dirname } from 'path'
+// import { fileURLToPath } from 'url'
+
+const fs = require('fs')
+// const { dirname }  = require('path')
+// const { fileURLToPath } = require(fs)
 
 function main() {
     if (!fs.existsSync('package.json')) {
@@ -8,8 +12,10 @@ function main() {
         return
     }
 
-    fs.appendFileSync('123.txt', dirname(fileURLToPath(import.meta.url)))
-    console.log(dirname(fileURLToPath(import.meta.url)))
+    fs.appendFileSync('123.txt', __dirname)
+    fs.appendFileSync('123.txt', __filename)
+    // fs.appendFileSync('123.txt', dirname(fileURLToPath(import.meta.url)))
+    //console.log(dirname(fileURLToPath(import.meta.url)))
 
     //创建文件结构
     // if (!fs.existsSync('src/index.ts')) {

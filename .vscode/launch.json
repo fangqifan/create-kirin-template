@@ -8,10 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "runtimeArgs": [
-                "--experimental-modules",
-                "--experimental-specifier-resolution=node"
-            ],
+            // "runtimeArgs": [
+            //     "--experimental-modules",
+            //     "--experimental-specifier-resolution=node"
+            // ],
             "skipFiles": [
                 "<node_internals>/**"
             ],
