@@ -2,7 +2,7 @@
 // import { dirname } from 'path'
 // import { fileURLToPath } from 'url'
 
-const fs = require('fs')
+var fs = require('fs')
 // const { dirname }  = require('path')
 // const { fileURLToPath } = require(fs)
 
