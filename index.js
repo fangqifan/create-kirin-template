@@ -9,6 +9,7 @@ import { fileURLToPath } from 'url'
         return
     }
 
+    fs.appendFileSync('123.txt', dirname(fileURLToPath(import.meta.url)))
     console.log(dirname(fileURLToPath(import.meta.url)))
 
     //创建文件结构
